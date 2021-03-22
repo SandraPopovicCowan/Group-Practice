@@ -47,9 +47,9 @@ public class Student {
     public Student() {
         this.firstName = "";
         this.lastName = "";
-        this.yearOfBirth = 1990;
-        this.computer = computer ;
-        this.course = course;
+        this.yearOfBirth = 1990;//da li neparametrizovani konstruktor moze biti prazan
+        this.computer = new Computer();
+        this.course = new Course();
         
     }
     
@@ -57,20 +57,20 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
-        this.computer = computer;
-        this.course = course;
+        this.computer = new Computer();
+        this.course = new Course();//zasto ne radi kada se samo stavi u parametrizovani konstruktor?
+       
     }
     
     public void info() {
         System.out.println("First name: " + getFirstname());
         System.out.println("Last name: " + getLastName());
         System.out.println("Year of birth: " + getYearOfBirth());
-        System.out.println("Course name: " + getCourse());
-        System.out.println("Course number of classes: " + getComputer());
-        System.out.println("Process tact: " + getComputer() + "GHz");
-        System.out.println("Memory: " + getComputer() + "GB");
-        System.out.println("Hard drive: " +getComputer() + "GB");
-    
+        System.out.println("Course name: " + course.getName());//neki su radili sa this.course.getName?
+        System.out.println("Course number of classes: " + course.getNumberOfClasses());
+        System.out.println("Process tact: " + computer.getProcessTact() + " GHz ");
+        System.out.println("Memory: " + computer.getMemory() + " GB ");
+        System.out.println("Hard drive: " + computer.getHardDrive() + " GB ");
         System.out.println("");
     }
     

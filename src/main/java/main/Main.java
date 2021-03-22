@@ -13,34 +13,20 @@ public class Main {
     
     public static void main(String[] args) {
       
-        Student ime = new Student();
+        Student student1 = new Student();
         
-        
-        ime.setFirstName("Bella");
-        ime.setLastName("Cowan");
-        ime.setYearOfBirth(2004);
+        student1.setFirstName("Bella");
+        student1.setLastName("Cowan");
+        student1.setYearOfBirth(2004);
+        student1.getCourse().setName("QA");
+        student1.getCourse().setNumberOfClasses(120);
+        student1.getComputer().setProcessTact(2.4);
+        student1.getComputer().setMemory(500);
+        student1.getComputer().setHardDrive(240);
+        student1.info();
        
         
         
-        Course naziv = new Course();
-       
-        naziv.setName("QA");
-        naziv.setNumberOfClasses(120);
-  
-        Computer tip = new Computer();
-       
-        tip.setProcessTact(2.8);
-        tip.setMemory(8.0);
-        tip.setHardDrive(250);
-        
-        System.out.println("First Name: " + ime.getFirstname());
-        System.out.println("Last name: " + ime.getLastName());
-        System.out.println("Year of birth: " + ime.getYearOfBirth());
-        System.out.println("Course name: " + naziv.getName());
-        System.out.println("Course number of classes: " +naziv.getNumberOfClasses());
-        System.out.println("Process tact: " + tip.getProcessTact());
-        System.out.println("Memory: " + tip.getMemory());
-        System.out.println("Hard drive: " + tip.getHardDrive());
         
                   
   
