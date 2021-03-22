@@ -12,12 +12,12 @@ public class Student {
     private Course course;
     private Computer computer;
     
-    public String getCourse() {
-        return course;
+    public Course getCourse() {
+        return this.course;
     }
     
-    public String getComputer() {
-        return computer;
+    public Computer getComputer() {
+        return this.computer;
     }
     
     public String getFirstname () {
