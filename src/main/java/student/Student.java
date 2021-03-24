@@ -47,18 +47,19 @@ public class Student {
     public Student() {
         this.firstName = "";
         this.lastName = "";
-        this.yearOfBirth = 1990;//da li neparametrizovani konstruktor moze biti prazan
+        this.yearOfBirth = 1990;//da li neparametrizovani konstruktor moze biti prazan, dakle da li su prva cetiri reda nephodna?
         this.computer = new Computer();
         this.course = new Course();
         
     }
     
-    public Student( String firstName, String lastName, int yearOfBirth, Course course, Computer computer) {
+    public Student( String firstName, String lastName, int yearOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
         this.computer = new Computer();
         this.course = new Course();//zasto ne radi kada se samo stavi u parametrizovani konstruktor?
+        //ja sam probala da radim samo sa parametrizovanim, ali nije radilo. Mora da bude u ovog gore neparametrizovanom.
        
     }
     
@@ -66,7 +67,7 @@ public class Student {
         System.out.println("First name: " + getFirstname());
         System.out.println("Last name: " + getLastName());
         System.out.println("Year of birth: " + getYearOfBirth());
-        System.out.println("Course name: " + course.getName());//neki su radili sa this.course.getName?
+        System.out.println("Course name: " + course.getName());//neki su radili sa this.course.getName , a ja nisam. Zasto oboma radi?
         System.out.println("Course number of classes: " + course.getNumberOfClasses());
         System.out.println("Process tact: " + computer.getProcessTact() + " GHz ");
         System.out.println("Memory: " + computer.getMemory() + " GB ");
