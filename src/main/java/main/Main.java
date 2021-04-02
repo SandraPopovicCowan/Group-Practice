@@ -5,15 +5,19 @@ package main;
 import student.Student;
 import course.Course;
 import computer.Computer;
+import frontend.Frontend;
+import java.io.IOException;
 
 
 
 public class Main {
 
     
-    public static void main(String[] args) {
-      
+    public static void main(String[] args) throws IOException {
+        
+        
         Student student1 = new Student();
+        Frontend frontend1 = new Frontend();
         
         student1.setFirstName("Bella");  
         student1.setLastName("Cowan");
@@ -24,7 +28,10 @@ public class Main {
         student1.getComputer().setMemory(500);
         student1.getComputer().setHardDrive(240);
         student1.info();
-       
+        //dodatak za generator html-a
+        frontend1.code();
+        
+        
     }
     
 }   

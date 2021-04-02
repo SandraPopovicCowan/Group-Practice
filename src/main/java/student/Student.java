@@ -2,7 +2,7 @@
 package student;
 import course.Course;
 import computer.Computer;
-
+import frontend.Frontend;
 
 
 public class Student {
@@ -11,6 +11,7 @@ public class Student {
     private int yearOfBirth;
     private Course course;
     private Computer computer;
+    private Frontend frontend;
     
     public Course getCourse() {
         return this.course;
@@ -18,6 +19,10 @@ public class Student {
     
     public Computer getComputer() {
         return this.computer;
+    }
+    
+    public Frontend getFrontend(){
+        return this.frontend;
     }
     
     public String getFirstname () {
@@ -74,6 +79,8 @@ public class Student {
         System.out.println("Hard drive: " + computer.getHardDrive() + " GB ");
         System.out.println("");
     }
+    
+    
     
     
 }
