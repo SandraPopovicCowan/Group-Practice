@@ -25,16 +25,10 @@ public class Frontend {
     private BufferedWriter bWriter;
     
     
-    public final Student getStudent(){
+    public Student getStudent(){
         return this.student;
     }
     
-    public Frontend (String html) {
-        this.html = "<div><p> Hello World </p></div>" + student.getFirstname();
-        
-        
-        
-    }
 
     public String getHtml() {
         return this.html;
