@@ -18,7 +18,7 @@ import java.io.IOException;
  */
 public class Frontend {
     private String html ;
-    File file = new File("C:\\Frontend\\Index.html");
+    File file = new File("C:\\Users\\kromp\\OneDrive\\Documents\\NetBeansProjects\\Group-Practice\\FrontEnd\\Index.html");
     
     private Student student;
     private FileWriter fWriter;
@@ -57,7 +57,7 @@ public class Frontend {
         this.bWriter = new BufferedWriter(fWriter);
         bWriter.write(html);
         bWriter.close();
-        System.out.println(html);
+        
     }  
    
         
