@@ -97,6 +97,9 @@
     background-color: rgba(168, 164, 164, 0.2);
 	width: 100%;
   }
+  h3{
+	  font-size: 22px;
+  }
   @media screen and (max-device-width: 380px) {
     nav {
       font-size: 15px;
