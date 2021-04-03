@@ -19,6 +19,8 @@ public class Main {
         Student student1 = new Student();
         Frontend frontend1 = new Frontend();
         
+        
+        
         student1.setFirstName("Bella");  
         student1.setLastName("Cowan");
         student1.setYearOfBirth(2004);
@@ -29,7 +31,19 @@ public class Main {
         student1.getComputer().setHardDrive(240);
         student1.info();
         //dodatak za generator html-a
+        
+        frontend1.setHtml(("<div><h1>Skola</h1><br>" + 
+                                                     "<p> First Name: " + student1.getFirstname() + "</p>" +
+                                                     "<p> Last Name: " +student1.getLastName() + "</p>" +
+                                                     "<p> Year of Birth: " +student1.getYearOfBirth() + "</p>" +
+                                                     "<p> Course Name: " +student1.getCourse().getName() + "</p>" +
+                                                     "<p> Number of classes: " +student1.getCourse().getNumberOfClasses() + "</p>" +
+                                                     "<p> Process Tact: " +student1.getComputer().getProcessTact() + "</p>" +
+                                                     "<p> RAM : " +student1.getComputer().getMemory() + "</p>" +
+                                                     "<p> HDD Capacity: " +student1.getComputer().getHardDrive() + "</p>" +
+                                                     "</div>"));
         frontend1.code();
+        
         
         
     }

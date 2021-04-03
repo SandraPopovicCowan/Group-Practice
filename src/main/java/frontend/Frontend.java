@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package frontend;
+import student.Student;
+
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -15,14 +17,22 @@ import java.io.IOException;
  * @author kromp
  */
 public class Frontend {
-   private String html = "<div><p> Hello World </p></div>";
-   File file = new File("C:\\Frontend\\Index.html");
+    private String html ;
+    File file = new File("C:\\Frontend\\Index.html");
+    
+    private Student student;
     private FileWriter fWriter;
     private BufferedWriter bWriter;
     
+    
+    public final Student getStudent(){
+        return this.student;
+    }
+    
     public Frontend (String html) {
+        this.html = "<div><p> Hello World </p></div>" + student.getFirstname();
         
-        this.html = html;
+        
         
     }
 
@@ -35,14 +45,19 @@ public class Frontend {
     }
 
     public Frontend() throws IOException {
+        this.html = "Hello World";
         this.fWriter = new FileWriter(file);
         this.bWriter = new BufferedWriter(fWriter);
         bWriter.write(html);
         bWriter.close();
     }
     
-    public void code(){
-        System.out.println(getHtml());
+    public void code() throws IOException{
+        this.fWriter = new FileWriter(file);
+        this.bWriter = new BufferedWriter(fWriter);
+        bWriter.write(html);
+        bWriter.close();
+        System.out.println(html);
     }  
    
         

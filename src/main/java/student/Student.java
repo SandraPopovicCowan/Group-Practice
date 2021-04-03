@@ -13,6 +13,8 @@ public class Student {
     private Computer computer;
     private Frontend frontend;
     
+    
+    
     public Course getCourse() {
         return this.course;
     }
@@ -78,6 +80,11 @@ public class Student {
         System.out.println("Memory: " + computer.getMemory() + " GB ");
         System.out.println("Hard drive: " + computer.getHardDrive() + " GB ");
         System.out.println("");
+    }
+    
+    public void infoData(){
+    
+        
     }
     
     
