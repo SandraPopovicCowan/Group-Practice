@@ -1,14 +1,13 @@
 package price;
 
 import course.Course;
-import java.util.Calendar;
+//import java.util.Calendar;
 
 public class Price {
     private int priceOfCourse;
     private int numberOfThePaymentMonth ;
     private Course course;
-    private String currentAccountNumber;
-    private Calendar paymentTransactionDate;
+//    private Calendar paymentTransactionDate;
 
     public int getPriceOfCourse() {
         return priceOfCourse;
@@ -34,28 +33,23 @@ public class Price {
         this.course = course;
     }
 
-    public String getCurrentAccountNumber() {
-        return currentAccountNumber;
-    }
+//    public Calendar getPaymentTransactionDate() {
+//        return paymentTransactionDate;
+//    }
+//
+//    public void setPaymentTransactionDate(Calendar paymentTransactionDate) {
+//        this.paymentTransactionDate = paymentTransactionDate;
+//    }
 
-    public void setCurrentAccountNumber(String currentAccountNumber) {
-        this.currentAccountNumber = currentAccountNumber;
-    }
-
-    public Calendar getPaymentTransactionDate() {
-        return paymentTransactionDate;
-    }
-
-    public void setPaymentTransactionDate(Calendar paymentTransactionDate) {
-        this.paymentTransactionDate = paymentTransactionDate;
-    }
-
-    public Price(int priceOfCourse, int numberOfThePaymentMonth, Course course, String currentAccountNumber, Calendar paymentTransactionDate) {
+    public Price(int priceOfCourse, int numberOfThePaymentMonth, Course course) {
         this.priceOfCourse = priceOfCourse;
         this.numberOfThePaymentMonth = numberOfThePaymentMonth;
         this.course = course;
-        this.currentAccountNumber = currentAccountNumber;
-        this.paymentTransactionDate = paymentTransactionDate;
+//        this.paymentTransactionDate = paymentTransactionDate;
+    }
+    public Price (){
+        this.priceOfCourse = 1500;
+        this.numberOfThePaymentMonth = 6; 
     }
     
 }

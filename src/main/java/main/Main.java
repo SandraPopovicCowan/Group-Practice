@@ -5,6 +5,7 @@ package main;
 import student.Student;
 import course.Course;
 import computer.Computer;
+import price.Price;
 
 
 
@@ -23,6 +24,8 @@ public class Main {
         student1.getComputer().setProcessTact(2.4);////ovo nisam znala da moze get pa set u ustom pozivu.
         student1.getComputer().setMemory(500);
         student1.getComputer().setHardDrive(240);
+//        student1.info();
+        student1.getPrice().setPriceOfCourse(1500);
         student1.info();
        
     }

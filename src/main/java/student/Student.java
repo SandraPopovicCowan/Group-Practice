@@ -2,6 +2,7 @@
 package student;
 import course.Course;
 import computer.Computer;
+import price.Price;
 
 
 
@@ -11,6 +12,15 @@ public class Student {
     private int yearOfBirth;
     private Course course;
     private Computer computer;
+    private Price price;
+
+    public Price getPrice() {
+        return price;
+    }
+
+//    public void setPrice(Price price) {
+//        this.price = price;
+//    }
     
     public Course getCourse() {
         return this.course;
@@ -50,6 +60,7 @@ public class Student {
         this.yearOfBirth = 1990;//da li neparametrizovani konstruktor moze biti prazan, dakle da li su prva cetiri reda nephodna?
         this.computer = new Computer();
         this.course = new Course();
+        this.price = new Price();
         
     }
     
@@ -60,7 +71,7 @@ public class Student {
         this.computer = new Computer();
         this.course = new Course();//zasto ne radi kada se samo stavi u parametrizovani konstruktor?
         //ja sam probala da radim samo sa parametrizovanim, ali nije radilo. Mora da bude u ovog gore neparametrizovanom.
-       
+       this.price = new Price();
     }
     
     public void info() {
@@ -72,6 +83,8 @@ public class Student {
         System.out.println("Process tact: " + computer.getProcessTact() + " GHz ");
         System.out.println("Memory: " + computer.getMemory() + " GB ");
         System.out.println("Hard drive: " + computer.getHardDrive() + " GB ");
+        System.out.println("");
+        System.out.println("Price of Course: " + price.getPriceOfCourse() + " EUR");
         System.out.println("");
     }
     
