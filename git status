@@ -1,0 +1,71 @@
+[33mcommit 2fb9efb27d31cb4f9a81f0c48dfb641d55e5ee18[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Milena Ratajac <milenaratajac@yahoo.com>
+Date:   Sat Apr 3 09:41:31 2021 +0200
+
+    add Upper Case for Firs name and Last name in Student Class
+
+[33mcommit 337a419b28b9c843548b3fc7305ca94266593beb[m
+Author: Milena Ratajac <milenaratajac@yahoo.com>
+Date:   Sat Apr 3 09:40:16 2021 +0200
+
+    reverd main version
+
+[33mcommit a6b4467f4a8f0f130a21fbecb09b1e5bae510868[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 29 20:25:59 2021 +0200
+
+    Small error correction
+
+[33mcommit 854b3cb09ac04ca13532bbcf896ee274679d568f[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Wed Mar 24 18:20:26 2021 +0100
+
+    Pitanja
+
+[33mcommit 05cc7933a603cd73e6ce440ce6af3a8468a65072[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 19:24:45 2021 +0100
+
+    Modified final
+
+[33mcommit a480cb6bd6a71ff6a6ff6e465d307f1eddc90fc8[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 18:06:38 2021 +0100
+
+    Final
+
+[33mcommit 429c3b518f0f5efc22c6b4bd66d672ffeb252438[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 16:34:50 2021 +0100
+
+    Main
+
+[33mcommit 25eaf78d5ce6a088680bb505dfef365502939938[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 15:47:27 2021 +0100
+
+    Slozeni atribut
+
+[33mcommit fda16d9b899979aa3ff7a39dd6cff825a9ff95d9[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 15:14:04 2021 +0100
+
+    Computer class
+
+[33mcommit e4c67b911c1f6518556124cfc512e1e7c602a840[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 14:58:14 2021 +0100
+
+    Class Course
+
+[33mcommit 04b6b7ae892a83c2acf89693dda0b762df376e54[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 14:33:59 2021 +0100
+
+    Class Student
+
+[33mcommit e49cf8ecedacb8d4abf0cdb7de3ef57115239987[m
+Author: User <macbookair@Bellas-MacBook-Air.local>
+Date:   Mon Mar 22 14:11:34 2021 +0100
+
+    .gitignore
