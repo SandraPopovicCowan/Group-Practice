@@ -20,8 +20,8 @@ public class Student {
         return this.computer;
     }
     
-    public String getFirstname () {
-         return this.firstName;
+    public String getFirstName () {
+         return this.firstName.toUpperCase();
      }
     
     public void setFirstName(String firstName) {
@@ -29,7 +29,7 @@ public class Student {
     }
     
     public String getLastName() {
-        return this.lastName;
+        return this.lastName.toUpperCase();
     }
     
     public void setLastName(String lastName){
@@ -64,7 +64,7 @@ public class Student {
     }
     
     public void info() {
-        System.out.println("First name: " + getFirstname());
+        System.out.println("First name: " + getFirstName());
         System.out.println("Last name: " + getLastName());
         System.out.println("Year of birth: " + getYearOfBirth());
         System.out.println("Course name: " + course.getName());//neki su radili sa this.course.getName , a ja nisam. Zasto oboma radi?
