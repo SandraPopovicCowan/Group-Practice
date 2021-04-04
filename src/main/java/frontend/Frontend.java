@@ -20,8 +20,8 @@ import java.io.IOException;
 public class Frontend {
     private String css;
     private String html ;
-    File file = new File("C:\\FrontEnd\\Index.html");
-    File file2 = new File("C:\\FrontEnd\\main.css");
+    File file = new File("Frontend/Index.html");
+    File file2 = new File("Frontend/main.css");
     
     private FileWriter fWriter;
     private BufferedWriter bWriter;
