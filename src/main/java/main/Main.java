@@ -21,7 +21,7 @@ public class Main {
         
         
         
-        student1.setFirstName("brown");  
+        student1.setFirstName("Bella");  
         student1.setLastName("Cowan");
         student1.setYearOfBirth(2004);
         student1.getCourse().setName("QA");
@@ -29,13 +29,14 @@ public class Main {
         student1.getComputer().setProcessTact(2.4);////ovo nisam znala da moze get pa set u ustom pozivu.
         student1.getComputer().setMemory(500);
         student1.getComputer().setHardDrive(240);
+        student1.getComputer().setOperatingSystem("Windows");
         student1.info();
         //dodatak za generator html-a
         
         
         
         
-        frontend1.setFirstName(student1.getFirstname());
+        frontend1.setFirstName(student1.getFirstName());
         frontend1.setLastName(student1.getLastName());
         frontend1.setYearOfBirth(student1.getYearOfBirth());
         frontend1.setName(student1.getCourse().getName());
@@ -43,6 +44,7 @@ public class Main {
         frontend1.setProcessTact(student1.getComputer().getProcessTact());
         frontend1.setMemory(student1.getComputer().getMemory());
         frontend1.setHardDrive(student1.getComputer().getHardDrive());
+        frontend1.setOperatingSystem(student1.getComputer().getOperatingSystem());
         
         frontend1.code();
         

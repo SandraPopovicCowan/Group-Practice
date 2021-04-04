@@ -25,7 +25,7 @@ public class Student {
     
     
     
-    public String getFirstname () {
+    public String getFirstName () {
          return this.firstName;
      }
     
@@ -69,7 +69,7 @@ public class Student {
     }
     
     public void info() {
-        System.out.println("First name: " + getFirstname());
+        System.out.println("First name: " + getFirstName());
         System.out.println("Last name: " + getLastName());
         System.out.println("Year of birth: " + getYearOfBirth());
         System.out.println("Course name: " + course.getName());//neki su radili sa this.course.getName , a ja nisam. Zasto oboma radi?
@@ -77,6 +77,7 @@ public class Student {
         System.out.println("Process tact: " + computer.getProcessTact() + " GHz ");
         System.out.println("Memory: " + computer.getMemory() + " GB ");
         System.out.println("Hard drive: " + computer.getHardDrive() + " GB ");
+        System.out.println("Operating System: " + computer.getOperatingSystem());
         System.out.println("");
     }
     

@@ -138,14 +138,7 @@ public class Frontend {
     public void setCodeName(String codeName) {
         this.codeName = codeName;
     }
-    
-        
-    
-
-    
-    
-    
-
+   
     public Course getCourse() {
         return this.course;
     }
@@ -157,11 +150,6 @@ public class Frontend {
         return this.student;
     }
 
-    
-    
-    
-    
-    
 
     public String getHtml() {
         return this.html;
@@ -223,6 +211,7 @@ public class Frontend {
             "                    <h3><b>Proccess Tact: </b>" + getProcessTact() + "</h3>\n" +
             "                    <h3><b>Memory: </b>" + getMemory() + "</h3>\n" +
             "                    <h3><b>Hard Disk Drive: </b>" + getHardDrive() + "</h3>\n" +
+            "                    <h3><b>Operating System: </b>" + getOperatingSystem()+ "</h3>\n" +
             "                </div>\n" +
             "            </div class=\"flex-container\">\n" +
             "        </section>\n" +
@@ -263,6 +252,10 @@ public class Frontend {
             "\n" +
             "  aside{\n" +
             "    font-size: 22px;\n" +
+            "  }\n" +
+            "\n" +
+            "  h3{\n" +
+            "    font-size: 18px;\n" +
             "  }\n" +
             "\n" +
             "  footer{\n" +
