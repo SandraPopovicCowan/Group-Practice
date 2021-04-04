@@ -23,18 +23,19 @@ public class Student {
         return this.computer;
     }
     
+
     
     
     public String getFirstName () {
          return this.firstName;
-     }
-    
+
+    }
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
     
     public String getLastName() {
-        return this.lastName;
+        return this.lastName.toUpperCase();
     }
     
     public void setLastName(String lastName){
