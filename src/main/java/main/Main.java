@@ -21,7 +21,7 @@ public class Main {
         
         
         
-        student1.setFirstName("Bella");  
+        student1.setFirstName("Isak");  
         student1.setLastName("Cowan");
         student1.setYearOfBirth(2004);
         student1.getCourse().setName("QA");
@@ -32,59 +32,18 @@ public class Main {
         student1.info();
         //dodatak za generator html-a
         
-        frontend1.setHtml((
-"<head>\n" +
-"    <meta charset=\"UTF-8\">\n" +
-"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n" +
-"    <title>Naslovna</title>\n" +
-"    <link rel=\"stylesheet\" href=\"main.css\">\n" +
-"    <script src=\"JS/myScript.js\"></script>\n" +
-"</head>\n" +
-"<body>\n" +
-"    <!--header-->\n" +
-"    <header>\n" +
-"       <div class=\"flex-container\">\n" +
-"           <div class=\"centar\">\n" +
-"               <div class=\"logo\">\n" +
-"                  <img src=\"Img/Logo White Transaprent 72ppi-02.png\" alt=\"logo\">\n" +
-"               </div>\n" +
-"            </div>\n" +
-"       </div>\n" +
-"      \n" +
-"    </header>\n" +
-"    <nav>\n" +
-"        \n" +
-"            <a href=\"#\">Početna</a>\n" +
-"            <a href=\"https://github.com/SandraPopovicCowan/Group-Practice\" target=\"_blank\">Github</a>\n" +
-"            <a href=\"#\">Discord</a>\n" +
-"            <a href=\"#\">Hobi</a>\n" +
-"            <a href=\"#\">Progress</a>\n" +
-"        \n" +
-"    </nav>\n" +
-"    <main>\n" +
-"        <section>\n" +
-"            <div class=\"flex-container\"> \n" +
-"                <div class=\"white-filter\">\n" +
-"                    <h3><b>First name: </b>" + student1.getFirstname() + "</h3>\n" +
-"                    <h3><b>Last name: </b>" + student1.getLastName() + "</h3>\n" +
-"		     <h3><b>Year of birth: </b>" + student1.getYearOfBirth() + "</h3>\n" +
-"		     <h3><b>Course Name: </b>" + student1.getCourse().getName() + "</h3>\n" +
-"                    <h3><b>Number of Classes:</b>" + student1.getCourse().getNumberOfClasses() + "</h3>\n" +
-"                    <h3><b>Proccess Tact: </b>" + student1.getComputer().getProcessTact() + "</h3>\n" +
-"                    <h3><b>Memory: </b>" + student1.getComputer().getMemory() + "</h3>\n" +
-"                    <h3><b>Hard Disk Drive: </b>" + student1.getComputer().getHardDrive() + "</h3>\n" +
-"                </div>\n" +
-"            </div class=\"flex-container\">\n" +
-"        </section>\n" +
-"    </main>\n" +
-"    <!--Footer-->\n" +
-"    <footer>\n" +
-"        <div>\n" +
-"            Website by mRG - 2021\n" +
-"        </div>\n" +
-"    </footer>\n" +
-"</body>\n" +
-"</html>"));
+        
+        
+        
+        frontend1.setFirstName(student1.getFirstname());
+        frontend1.setLastName(student1.getLastName());
+        frontend1.setYearOfBirth(student1.getYearOfBirth());
+        frontend1.setName(student1.getCourse().getName());
+        frontend1.setNumberOfClasses(student1.getCourse().getNumberOfClasses());
+        frontend1.setProcessTact(student1.getComputer().getProcessTact());
+        frontend1.setMemory(student1.getComputer().getMemory());
+        frontend1.setHardDrive(student1.getComputer().getHardDrive());
+        
         frontend1.code();
         
         

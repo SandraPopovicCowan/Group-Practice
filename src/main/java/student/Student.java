@@ -11,7 +11,7 @@ public class Student {
     private int yearOfBirth;
     private Course course;
     private Computer computer;
-    private Frontend frontend;
+   
     
     
     
@@ -23,9 +23,7 @@ public class Student {
         return this.computer;
     }
     
-    public Frontend getFrontend(){
-        return this.frontend;
-    }
+    
     
     public String getFirstname () {
          return this.firstName;
