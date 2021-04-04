@@ -21,7 +21,7 @@ public class Main {
         
         
         
-        student1.setFirstName("Isak");  
+        student1.setFirstName("Joe");  
         student1.setLastName("Cowan");
         student1.setYearOfBirth(2004);
         student1.getCourse().setName("QA");
