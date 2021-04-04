@@ -7,6 +7,7 @@ import course.Course;
 import computer.Computer;
 import frontend.Frontend;
 import java.io.IOException;
+import price.Price;
 
 
 
@@ -30,6 +31,7 @@ public class Main {
         student1.getComputer().setMemory(500);
         student1.getComputer().setHardDrive(240);
         student1.getComputer().setOperatingSystem("Windows");
+        student1.getPrice().setPriceOfCourse(1500);
         student1.info();
         //dodatak za generator html-a
         
@@ -45,6 +47,7 @@ public class Main {
         frontend1.setMemory(student1.getComputer().getMemory());
         frontend1.setHardDrive(student1.getComputer().getHardDrive());
         frontend1.setOperatingSystem(student1.getComputer().getOperatingSystem());
+        frontend1.setPriceOfCourse(student1.getPrice().getPriceOfCourse());
         
         frontend1.code();
         

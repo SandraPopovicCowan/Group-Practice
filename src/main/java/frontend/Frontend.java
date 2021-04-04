@@ -7,6 +7,7 @@ package frontend;
 import student.Student;
 import course.Course;
 import computer.Computer;
+import price.Price;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -42,8 +43,10 @@ public class Frontend {
     private String name;
     private int numberOfClasses;
     private String codeName;
+    
+    private int priceOfCourse;
 
-    public Frontend(Student student, Course course, Computer computer, String firstName, String lastName, int yearOfBirth, String operatingSystem, double processTact, double memory, int hardDrive, String name, int numberOfClasses, String codeName) {
+    public Frontend(Student student, Course course, Computer computer, String firstName, String lastName, int yearOfBirth, String operatingSystem, double processTact, double memory, int hardDrive, String name, int numberOfClasses, String codeName, int priceOfCourse) {
         this.student = student;
         this.course = course;
         this.computer = computer;
@@ -57,6 +60,7 @@ public class Frontend {
         this.name = name;
         this.numberOfClasses = numberOfClasses;
         this.codeName = codeName;
+        this.priceOfCourse = priceOfCourse;
     }
 
     public String getFirstName() {
@@ -150,6 +154,14 @@ public class Frontend {
         return this.student;
     }
 
+    public int getPriceOfCourse() {
+        return this.priceOfCourse;
+    }
+
+    public void setPriceOfCourse(int priceOfCourse) {
+        this.priceOfCourse = priceOfCourse;
+    }
+    
 
     public String getHtml() {
         return this.html;
@@ -212,6 +224,7 @@ public class Frontend {
             "                    <h3><b>Memory: </b>" + getMemory() + "</h3>\n" +
             "                    <h3><b>Hard Disk Drive: </b>" + getHardDrive() + "</h3>\n" +
             "                    <h3><b>Operating System: </b>" + getOperatingSystem()+ "</h3>\n" +
+            "                    <h3><b>Price of Course: </b>" + getPriceOfCourse() + " EUR." + "</h3>\n" +
             "                </div>\n" +
             "            </div class=\"flex-container\">\n" +
             "        </section>\n" +
