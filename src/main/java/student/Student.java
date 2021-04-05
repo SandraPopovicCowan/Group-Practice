@@ -11,6 +11,8 @@ public class Student {
     private int yearOfBirth;
     private Course course;
     private Computer computer;
+    private String haircolor;
+    private String eyecolor;
     
     public Course getCourse() {
         return this.course;
